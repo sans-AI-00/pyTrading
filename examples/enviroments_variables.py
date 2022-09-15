@@ -1,0 +1,4 @@
+LOGIN = 9999999
+PASSWORD = "PASSWORD"
+SERVER = "SERVER"
+PATH = "C:\\Path\\to\\terminal64.exe"
