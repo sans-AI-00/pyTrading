@@ -1,4 +1,6 @@
-from enviroments_variables import LOGIN, PASSWORD, SERVER, PATH, SYMBOL, LOT, MAGIC
+from strategy_enviroments_variables import SYMBOL, LOT, MAGIC
+from login_enviroments_variables import LOGIN, PASSWORD, SERVER
+print(LOGIN, PASSWORD, SERVER)
 import MetaTrader5 as mt5
 from financial_tools.financial_tools import ROC_from_pos
 import time

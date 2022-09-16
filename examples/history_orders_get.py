@@ -1,4 +1,4 @@
-from enviroments_variables import LOGIN, PASSWORD, SERVER, PATH
+from login_enviroments_variables import LOGIN, PASSWORD, SERVER, PATH
 from datetime import datetime
 import MetaTrader5 as mt5
 import pandas as pd

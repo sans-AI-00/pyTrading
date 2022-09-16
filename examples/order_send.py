@@ -1,4 +1,4 @@
-from enviroments_variables import LOGIN, PASSWORD, SERVER, PATH
+from login_enviroments_variables import LOGIN, PASSWORD, SERVER, PATH
 import time
 import MetaTrader5 as mt5
 

@@ -1,4 +1,4 @@
-from enviroments_variables import LOGIN, PASSWORD, SERVER, PATH
+from login_enviroments_variables import LOGIN, PASSWORD, SERVER, PATH
 import MetaTrader5 as mt5
 
 # mostra i dati sul package MetaTrader 5
