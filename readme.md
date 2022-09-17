@@ -30,6 +30,7 @@ Per maggiori informazioni visitare il sito ufficiale: https://www.mql5.com/it/do
 2) Il file Python "login_environments_variables.py", il quale contiene le variabili di ambiente che la strategia utilizza per accedere al conto Meta Trader 5 con cui si intende operare. L'utente dovrà sostituire il valore delle variabili "LOGIN", "PASSWORD", "SERVER" e "PATH" con i valori del proprio conto. facendo attenzione a inserire "LOGIN" in forma di numero intero e le altre variabili in forma di stringhe.
 3) il file Python "strategy_environments_variables", il quale contiene le variabili di ambiente che descrivono i parametri operativi principali della strategia. La variabile "SYMBOL" (stringa) descrive il TAG dell'asset sul quale intendiamo investire. "LOT" (decimale) è un numero che descrive l'importo di ogni investimento. Ala variabile "MAGIC" (intero) invece bisogna fornire la "targa numerica" arbitraria che ci permetterà di distinguere le operazioni eseguite da diverse strategie che operano in simultanea sul emdesimo conto, ed ovviamente ci aiuta ad evitare che le diverse strategie vadano in conflitto tra loro.
 4) il file Python "name_strategy.py", il quale sarà lo script che andremmo effettivamente ad eseguire per rendere operativa la strategia mettendola a mercato. 
+5) il file "info_strategy.md" nel quale sono inserite tutte le informazioni relative alla strategia in questione e sul settaggio ottimale dei parametri.
 
 ### Utilizzo:
 
