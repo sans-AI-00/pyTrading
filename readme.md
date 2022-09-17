@@ -39,3 +39,10 @@ Di seguito si illustra il procedimento da seguire per avviare gli script di esem
 3) Inserire all'interno del prompt il seguente comando "cd <path\to\pyTrading-main>", dove al posto di <path\to\pyTrading-main> va inserito il path della cartella del progetto "pyTrading". Nota: nel caso la cartella sia stata posizionata nel percorso "C:\" il comando è "cd C:\pyTrading-main".
 4) Se si vuole eseguire una startegia eseguire il comando "python strategies\nome_strategia\nome_strategia.py", dove al posto di "nome_strategia.py" andremo ad inserire il nome dello script python relativo alla strategia che intendiamo eseguire. Nota: nel caso della strategia "ROC", per esempio, il comando sarà "python strategies\ROC_strategy\ROC_strategy.py".
 5) Analogamente per eseguire gli script di esempio inserire il seguente comando "python examples\nome_esempio.py".
+
+### Aggiunte future:
+
+1) verranno aggiunte periodicamente nuove strategie nella directory "strategies". 
+2) il file "strategy_environments_variables.py" verrà esteso in modo tale da permettere la regolazione di diversi parametri con metodologie diverse, ad esempio la possibilità di determinare il capitale da investire per singola operazione in percdentuale al capitale disponibile (e non solo in valore assoluto come multiplo di "lotti")
+3) verranno sviluppate nuove funzioni per rendere più semplici le operazioni di inzializzazione della strategia e di messa a mercato delle operazioni, così da rendere il codice delle strategie più "pulito".
+4) saranno inserite le funzionalità di BeckTesting.
