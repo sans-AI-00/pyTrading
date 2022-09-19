@@ -81,7 +81,7 @@ riga 112-125: riga 112-125: nelle seguenti righe si va a costruire il dizionario
 12) *type_filling*: Tipo di riempimento dell'ordine. Il valore può essere uno dei valori *ORDER_TYPE_FILLING* (vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercheck_py#order_type_filling).
 
 riga 128-130: la riga *result = mt5.order_send(request)* invia l'ordine configurato dalla variabile di input *request* ed associa l'esito della richiesta (sotto forma di codice identificativo) alla variabile *result*.
-la riga 130 stampa a video le informazioni relative all'ordine appena inviato.
+la riga 130 stampa a video le informazioni relative all'ordine appena inviato. Per maggiori informazioni vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordersend_py .
 
 riga 131-134: le seguenti righe stampano a video l'esito dell'ordine in caso di errore, altrimenti se l'rdine va a buon fine viene aggiunto il valore del "ticket" (valore identificativo dell'ordine) alla lista *orders*.
 
