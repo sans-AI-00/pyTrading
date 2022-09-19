@@ -80,3 +80,21 @@ riga 112-125: riga 112-125: nelle seguenti righe si va a costruire il dizionario
 11) *type_time*: Tipo di ordine per scadenza. Il valore può essere uno dei valori *ORDER_TYPE_TIME* ( vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercheck_py#order_type_time).
 12) *type_filling*: Tipo di riempimento dell'ordine. Il valore può essere uno dei valori *ORDER_TYPE_FILLING* (vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercheck_py#order_type_filling).
 
+riga 128-130: la riga *result = mt5.order_send(request)* invia l'ordine configurato dalla variabile di input *request* ed associa l'esito della richiesta (sotto forma di codice identificativo) alla variabile *result*.
+la riga 130 stampa a video le informazioni relative all'ordine appena inviato.
+
+riga 131-134: le seguenti righe stampano a video l'esito dell'ordine in caso di errore, altrimenti se l'rdine va a buon fine viene aggiunto il valore del "ticket" (valore identificativo dell'ordine) alla lista *orders*.
+
+riga 136: l'istruzione *if close_condition and orders:* esegue le righe contenuti all'interno del suo corpo (138-154) solo se *close_condition = True* e la lista *orders* non è vuota, ossia solo se si attiva il segnale di vendita e sono presenti ordini di acquisto ancora non chiusi.
+
+riga 138: l'istruzione *for order in orders:* esegue un ciclo iterando sugli elementi della lista *orders*, ossia la lista contenente i "tickets" degli ordini aperti. Ad ogni iterazione l'istruzione *For* esegue le righe contenute all'interno del corpo dell'istruzione (139-154).
+
+riga 139-141: la riga di codice *position_id = order* ssocia il valore del ticket dell'ordine considerato alla variabile *position_id*.
+Il comando *price = mt5.symbol_info_tick(SYMBOL).bid* associa alla variabile *price* il prezzo attuale di venidta (bid).
+La variabile *deviation* come già visto definisce la variazione di prezzo che siamo disposti a tollerare.
+
+riga 142-154: Come visto in precedenza definiamo le variabili di input della richiesta di ordine, stavoltà trattando però un oridne di vendità e non di acquisto. Un parametro aggiuntivo è la coppia "chiave-valore" definita dalla chiave *position*, la quale prende in input il ticket dell'ordine che si intende chiudere (fondamentale per distinguere in maniera univoca l'ordine).
+
+riga 157-167: analogamente al blocco costituito dalle righe 127-134 esso invia l'ordine e stampa a video un eventuale esito negativo, mentre nel caso di esito positivo chiude l'ordine identificato da ticket e rimuove il relativo ticket dalla lista *orders*.
+
+riga 169: il comando *cnt += 1* al termine di ogni ciclo incrementa di 1 la variabile *cnt* che tiene il conto dei cicli eseguiti.
