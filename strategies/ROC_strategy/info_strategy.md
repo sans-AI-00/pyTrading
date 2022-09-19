@@ -57,3 +57,13 @@ Analogamente la riga di codice *long_condition_1 = ROC_50 >= 0* associa alla var
 riga 80-82: il comando *if cnt > 1:* fa sì che le righe di codice contenute all'interno del suo corpo (81-82) vengano eseguite solo se la variabile *cnt* è maggiore di 1. Questo si rende necessario in quanto al conteggio 0 le variabili *ROC_20_down_0_previous_state* e *ROC_20_up_negative5_previous_state* non assunto ancora alcun valore.
 Il comando *long_condition_3 = ROC_20_down_0_previous_state and not ROC_20_down_0_current_state* associa alla variabile boleana *long_condition_3* il valore *True* solo se *ROC_20_down_0_previous_state = True* e *ROC_20_down_0_current_state = False*, ossia se la variabile *ROC_20* ha incrociato a rialzo il valore 0. In tutti gli altri casi restituisce *False*.
 Il comando *close_condition = ROC_20_up_negative5_previous_state and not ROC_20_up_negative5_current_state* associa alla variabile boleana *close_condition* il valore *True* solo se *ROC_20_up_negative5_previous_state* e *ROC_20_up_negative5_current_state = False*, ossia se la variabile *ROC_20* ha incrociato a ribasso il valore -5. In tutti gli altri casi restituisce *False*.
+
+riga 85-106: righe di codice che si occupano di stampare a video, ogni 10 secondi, i valori aggiornati delle varibili e le informazioni del conto, con eventuali segnali di buy/sell scattati e le conseguenti operazioni effettuate a mercato.
+
+riga 107: l'istruzione *if long_condition_1 and long_condition_2 and long_condition_3:* fa sì che vegano eseguite le righe contenute all'interno del suo corpo (108-134) solo se tutte e tre le condizioni long risultano essere vere, ossia *long_condition_1 = True*, *long_condition_2 = True* e *long_condition_3 = True*.
+
+riga 109-111: la riga di codice *point = mt5.symbol_info(SYMBOL).point* associa alla variabile *point* il valore del "point" più piccolo misurabile sull'asset definito dalla variabile di input *SYMBOL* (ricordando che "1 point = 10 pips")
+La riga di codice *price = mt5.symbol_info_tick(SYMBOL).ask* associa alla variabile *price* il prezzo corrente di acquisto (ask) relativo all'asset definito dalla variabile *SYMBOL*.
+L'istruzione *deviation = 20* definisce la deviazione massima dal prezzo entro il quale siamo disposti ad acquistare dal momento in cui è partito l'ordine di acquisto.
+
+riga 112-125: 
