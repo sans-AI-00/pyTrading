@@ -66,4 +66,17 @@ riga 109-111: la riga di codice *point = mt5.symbol_info(SYMBOL).point* associa 
 La riga di codice *price = mt5.symbol_info_tick(SYMBOL).ask* associa alla variabile *price* il prezzo corrente di acquisto (ask) relativo all'asset definito dalla variabile *SYMBOL*.
 L'istruzione *deviation = 20* definisce la deviazione massima dal prezzo entro il quale siamo disposti ad acquistare dal momento in cui è partito l'ordine di acquisto.
 
-riga 112-125: 
+riga 112-125: riga 112-125: nelle seguenti righe si va a costruire il dizionario che definisce le variabili della richiesta di ordine da affettuare all'API di Meta Trader 5. Essa è composta dalle seguenti coppie "chiave - valore".
+1) *action*: Tipo di operazione di trading. Il valore può essere uno dei valori dell'enumerazione *TRADE_REQUEST_ACTIONS* (vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercheck_py#trade_request_actions).
+2) *symbol*: Il nome dello strumento di trading (asset), per il quale viene piazzato l'ordine. Non richiesto per modificare ordini e chiudere posizioni.
+3) *volume*: Volume richiesto di un affare(deal) in lotti. Un volume reale quando si fa un affare(deal) dipende dal tipo di esecuzione dell'ordine.
+4) *type*: Tipo di ordine. Il valore può essere uno dei valori dell'enumerazione *ORDER_TYPE* (vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercalcmargin_py#order_type).
+5) *price*: Prezzo al quale eseguire un ordine.
+6) *sl*: Un prezzo per cui viene attivato un ordine Stop Loss quando il prezzo si sposta in una direzione sfavorevole.
+7) *tp*: Un prezzo per cui viene attivato un ordine Take Profit quando il prezzo si muove in una direzione favorevole
+8) *deviation*: Deviazione massima accettabile dal prezzo richiesto, specificata in "points".
+9) *magic*: EA ID. Consente di organizzare la gestione analitica degli ordini di trading. Ogni EA può impostare un ID univoco quando invia una richiesta di trading.
+10) *comment*: Commento ad un ordine.
+11) *type_time*: Tipo di ordine per scadenza. Il valore può essere uno dei valori *ORDER_TYPE_TIME* ( vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercheck_py#order_type_time).
+12) *type_filling*: Tipo di riempimento dell'ordine. Il valore può essere uno dei valori *ORDER_TYPE_FILLING* (vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5ordercheck_py#order_type_filling).
+
