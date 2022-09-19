@@ -1,6 +1,5 @@
 from strategy_environments_variables import SYMBOL, LOT, MAGIC
-from login_environments_variables import LOGIN, PASSWORD, SERVER
-print(LOGIN, PASSWORD, SERVER)
+from login_environments_variables import LOGIN, PASSWORD, SERVER, PATH
 import MetaTrader5 as mt5
 from financial_tools.financial_tools import ROC_from_pos
 import time
@@ -18,9 +17,6 @@ print("=" * 200 + '\n' + "=" * 200)
 if not mt5.initialize(path=PATH, login=LOGIN, password=PASSWORD, server=SERVER):
     print("initialize() fallito, error code =", mt5.last_error())
     quit()
-
-# visualizza i dati sulla versione MetaTrader 5
-print(mt5.version())
 
 # ora si connette ad un account di trading specificando la password
 authorized = mt5.login(login=LOGIN, password=PASSWORD, server=SERVER)
