@@ -33,3 +33,14 @@ riga 44: con il comando *while(True):* definiamo un ciclo "while" senza regola d
 
 riga 46: *time.sleep(1)* è un comando della libreira *time* che fa si che il compilatore attenda un secondo prima di passare ai comandi successivi, esso dunque ci permette di regolare una frequenza con la quale il ciclo "while" andrà a ripetere a loop i comandi sottostanti (in questo caso un cilco al seocondo).
 
+riga 48-51: con il comando *account_info_dict = mt5.account_info()._asdict()*, come già visto, associamo le informazioni correnti del conto alla variabile dizionario *account_info_dict*. Con il comando *balance = account_info_dict["balance"]* associamo l'informazione relativa alla chiave "balance" alla variabile *balace*
+che rappresenta appunto il capitale totale presente sul conto al momento della "chiamata". Analogamente con il comando *margin_free = account_info_dict["margin_free"]*, andiamo a prelevare l'informazione relativa al capitale libero, ossia disponibile per la messa a mercato delle operazioni. Assoceremo tale valore alla variabile *margin_free*.
+
+riga 54-56: associamo alle variabili *ROC_100*, *ROC_50* e *ROC_20*, i valori del "ROC" valutato su 100,50 e 20 periodi, rispettivamente.
+Tali variabili rappresentato il valore del "ROC" misurato all'instante attuale (variabile decimale). 
+La funzione *ROC_from_pos(start, stop, symbol, time_frame, timeperiod)* restituisce una lista contenente i valori del "ROC" misurati a partire dalla barra di indice "start" (più recente) fino alla barra di indice "stop" (precedente situata nel passato), duqnue se "start - stop = 200" otteniamo una lista contenente i 200 valori del "ROC" 
+misurati su ognuna delle 200 barre, cronologicamente ordinati in modo tale che la freccia del tempo punti verso destra.
+La variabile di input "symbol" richiede l'inserimento della stringa relativa all'asset sul quale intendiamo operare.
+La variabile di input "time_frame" richiede l'inseriemnto del time frame sul quale opera la strategia, mentre la variabile "time_period" necessita del valore numerico relativo al periodo utilizzato dall'indicatore "ROC".
+Ad esempio il seguente comando *ROC_100 = ROC_from_pos(0, 200, symbol=SYMBOL, time_frame=mt5.TIMEFRAME_H4, timeperiod=100)[-1]* associa alla variabile *ROC_100* l'ultimo valore misurato (valore presente, indice della lista [-1]) della lista delle misurazioni del "ROC" . Avendo considerato come input, "start" = 0 (barra iniziale corrispondente al presente),
+"stop"=200 (200 barre nel passato), "SYMBOL" che identifica l'asset da utilizzare (variabile di tipo stringa definita nello script *strategy_environments_variables.py*) e modificabile dall'utente, un time frame di 4H definita dalla variabile *mt5.TIMEFRAME_H4* (oggetto time frame definito nella libreria MetaTrader5), ed infine un valore di 100 per il periodo relativo all'indicatore "ROC". 
