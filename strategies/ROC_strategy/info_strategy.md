@@ -50,3 +50,10 @@ riga 60-74: il blocco di codice rappresentato da queste righe verrà descritto c
 2) la variabile boleana *ROC_20_down_0_previus_state* assume valore *True* se la variabile *ROC_20* valutata una barra nel passato ha un valore inferiore a 0, altrimenti *False*.
 3) la variabile boleana *ROC_20_up_negative5_current_state* assume valore *True* se la variabile *ROC_20* valutata sulla barra presente ha un valore superiore a -5, altrimenti *False*.
 4) la variabile boleana *ROC_20_up_negative5_previus_state* assume valore *True* se la variabile *ROC_20* valutata una barra nel passato ha un valore superiore a -5, altrimenti *False*.
+
+riga 78-79: la riga di codice *long_condition_1 = ROC_100 >= 0* associa alla variabile *long_condition_1* il valore *True* se il valore corrente della variabile *ROC_100* è superiore o uguale a 0, altrimenti *False*.
+Analogamente la riga di codice *long_condition_1 = ROC_50 >= 0* associa alla variabile *long_condition_1* il valore *True* se il valore corrente della variabile *ROC_50* è superiore o uguale a 0, altrimenti *False*.
+
+riga 80-82: il comando *if cnt > 1:* fa sì che le righe di codice contenute all'interno del suo corpo (81-82) vengano eseguite solo se la variabile *cnt* è maggiore di 1. Questo si rende necessario in quanto al conteggio 0 le variabili *ROC_20_down_0_previous_state* e *ROC_20_up_negative5_previous_state* non assunto ancora alcun valore.
+Il comando *long_condition_3 = ROC_20_down_0_previous_state and not ROC_20_down_0_current_state* associa alla variabile boleana *long_condition_3* il valore *True* solo se *ROC_20_down_0_previous_state = True* e *ROC_20_down_0_current_state = False*, ossia se la variabile *ROC_20* ha incrociato a rialzo il valore 0. In tutti gli altri casi restituisce *False*.
+Il comando *close_condition = ROC_20_up_negative5_previous_state and not ROC_20_up_negative5_current_state* associa alla variabile boleana *close_condition* il valore *True* solo se *ROC_20_up_negative5_previous_state* e *ROC_20_up_negative5_current_state = False*, ossia se la variabile *ROC_20* ha incrociato a ribasso il valore -5. In tutti gli altri casi restituisce *False*.
