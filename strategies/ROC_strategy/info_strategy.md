@@ -1,5 +1,6 @@
 # Informazioni utili
 
+## Descrizione codice python:
 riga 1-5: si ffettua l'importazione di tutte le librerie necessarie per il corretto funzionamento del codice. 
 Da *strategy_environments_variables* si importano le varibili globali *SYMBOL*, *LOT* e *MAGIC*, le quali definiscono 
 l'asset sul quale operiamo, l'importo di ogni investimento e la targa identificativa dell'EA che si intende mettere a mercato.
