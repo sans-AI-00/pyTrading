@@ -4,7 +4,7 @@
 line 1-5: import all the libraries necessary for the correct functioning of the code.
 From ***strategy_environments_variables*** we import the global variables ***SYMBOL***, ***LOT*** and ***MAGIC***, which define
 the asset on which we operate, the amount of each investment and the identification plate of the EA that we intend to put on the market.
-From *** login_environments_variables ***the global variables*** LOGIN*** ***PASSWORD***, ***SERVER*** and ***PATH*** are imported, which define the credentials
+From ***login_environments_variables*** the global variables ***LOGIN*** ***PASSWORD***, ***SERVER*** and ***PATH*** are imported, which define the credentials
 access to the user's personal account. From***MetaTrader5*** (renamed as ***mt5***) the functions of the API of Meta Trader 5 are imported, thanks to which it is possible to "communicate" with the terminal
 MT5 by converting the python commands into actual actions performed on the Meta Trader 5 platform. From the ***financial_tools.financial_tools*** module, the indicators to be used within the strategy are imported,
 in the case in question, only the "ROC" indicator implemented by the ***ROC_from_pos*** function is used.
@@ -32,7 +32,7 @@ line 37-42: We initialize the following variables:
 
 line 44: with the command ***while (True):*** we define a "while" loop without an interruption rule, therefore ideally able to "loop" indefinitely until the script is closed manually. All commands written with indent inside the body of the duqnue "while" loop will be looped.
 
-line 46: ***time.sleep (1)*** is a command of the library *** time *** which causes the compiler to wait a second before moving on to the following commands, therefore it allows us to adjust a frequency with which the "while" loop will repeat the underlying commands in a loop (in this case one cycle per second).
+line 46: ***time.sleep (1)*** is a command of the library ***time*** which causes the compiler to wait a second before moving on to the following commands, therefore it allows us to adjust a frequency with which the "while" loop will repeat the underlying commands in a loop (in this case one cycle per second).
 
 line 48-51: with the command ***account_info_dict = mt5.account_info () ._ asdict ()***, as already seen, we associate the current information of the account with the dictionary variable ***account_info_dict***. With the ***balance = account_info_dict ["balance"]*** command we associate the information relating to the "balance" key to the ***balance*** variable
 which represents the total capital present in the account at the time of the "call". Similarly with the command ***margin_free = account_info_dict ["margin_free"]***, we are going to take the information relating to free capital, that is, available for the marketing of the operations. We will associate this value with the ***margin_free*** variable.
@@ -48,9 +48,9 @@ For example, the following command ***ROC_100 = ROC_from_pos (0, 200, symbol = S
 
 line 60-74: the code block represented by these lines will be described more precisely at the end of the document, a "black box" description is presented here. The lines contained in the block manipulate the variables:
 1) the Boolean variable ***ROC_20_down_0_current_state*** takes value ***True*** if the variable ***ROC_20*** evaluated on the present bar has a value lower than 0, otherwise ***False*** .
-2) the Boolean variable ***ROC_20_down_0_previus_state*** takes value *** True *** if the variable ***ROC_20*** evaluated a bar in the past has a value less than 0, otherwise ***False***.
-3) the Boolean variable ***ROC_20_up_negative5_current_state*** takes value *** True *** if the variable ***ROC_20*** evaluated on the present bar has a value greater than -5, otherwise ***False***.
-4) the Boolean variable ***ROC_20_up_negative5_previus_state*** takes value *** True *** if the variable ***ROC_20*** evaluated a bar in the past has a value greater than -5, otherwise ***False***.
+2) the Boolean variable ***ROC_20_down_0_previus_state*** takes value ***True*** if the variable ***ROC_20*** evaluated a bar in the past has a value less than 0, otherwise ***False***.
+3) the Boolean variable ***ROC_20_up_negative5_current_state*** takes value ***True*** if the variable ***ROC_20*** evaluated on the present bar has a value greater than -5, otherwise ***False***.
+4) the Boolean variable ***ROC_20_up_negative5_previus_state*** takes value ***True*** if the variable ***ROC_20*** evaluated a bar in the past has a value greater than -5, otherwise ***False***.
 
 line 78-79: the line of code ***long_condition_1 = ROC_100> = 0*** associates the ***long_condition_1*** variable with the value ***True*** if the current value of the variable ***ROC_100*** is greater than or equal to 0, otherwise ***False***.
 Similarly, the line of code ***long_condition_1 = ROC_50> = 0*** associates the ***long_condition_1*** variable with the ***True*** value if the current value of the ***ROC_50*** variable is greater than or equal to 0, otherwise ***False***.
