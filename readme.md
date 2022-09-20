@@ -1,4 +1,57 @@
-# pyTrading 
+# pyTrading (eng)
+
+### Prerequisites:
+
+1) Install the Meta Trader 5 trading platform on your computer (preferably windows pc). Download and account creation page (XM broker): https://www.xm.com/it/?gclid=CjwKCAjw4JWZBhApEiwAtJUN0DMsZi3gC2gO2GNoXRsR2njLn6qPL77d6nFdTo8jFkHlUQPIEVBWQnCho
+2) Create Meta Trader 5 account accounts (for example through XM or other brokers ...)
+3) Identify, on your PC, the path of the Meta Trader 5 terminal, typically in the form
+PATH = "path \\\ to \\\ MT5 \\\ terminal64.exe".
+4) Obtain the following information regarding the MT5 account:
+   1) USER_ID
+   2) PASSWORD
+   3) SERVER
+5) Install the "Python compiler" if not present in the operating system (preferably Python 3.8.x-3.9.x). Download page: https://www.python.org/downloads/.
+To check the presence and any version of the python compiler on your pc, follow the instructions on the following page: https://www.wikihow.it/Controlla-la-Versa-di-Python-in-Windows-o-su -Mac
+6) Install "Anaconda". Download page: https://www.anaconda.com/products/distribution/download-success-pythonanywhere
+7) Install the "ta-lib" python library. Procedure by platform: https://blog.quantinsti.com/install-ta-lib-python/
+8) Install the "MetaTrader5" python library (run "pip install MetaTrader5" in the anaconda terminal)
+9) Install the "numpy" python library (run "pip install numpy" in the anaconda terminal)
+10) Install the python library "pandas" (run "pip install pandas" in the anaconda terminal)
+11) Install the "matplotlib" python library (run "pip install matplotlib" in the anaconda terminal)
+
+### Contents description:
+* "Examples" directory *: inside you can find various python scripts, each of which shows a practical example of using the functions offered by the "MetaTrader5" library.
+For more information visit the official website: https://www.mql5.com/it/docs/integration/python_metatrader5. To use the examples edit the Python file "login_environments_variables.py" (contained in the "examples" directory), which contains the environment variables that the strategy uses to access the Meta Trader 5 account with which you intend to operate. The user must replace the value of the "LOGIN", "PASSWORD", "SERVER" and "PATH" variables with the values ​​of his own account. making sure to insert "LOGIN" in the form of an integer and the other variables in the form of strings.
+
+* Directory "financial_tools" *: inside it it is possible to identify all the function classes that implement the technical indicators and more generally the tools that we will use for the strategies. This directory will be copied into the root directory of any strategy we are going to create and use.
+
+* Directory "strategies' *: inside there are the directories of our strategies, which contain everything you need to make the strategy work. More specifically, each strategy directory consists of the following files:
+1) The "financial_tools" directory which contains the technical tools. The user will not have to modify the files contained within it unless he intends to create new indicators or modify existing ones.
+2) The Python file "login_environments_variables.py", which contains the environment variables that the strategy uses to access the Meta Trader 5 account with which you intend to operate. The user must replace the value of the "LOGIN", "PASSWORD", "SERVER" and "PATH" variables with the values ​​of his own account. making sure to insert "LOGIN" in the form of an integer and the other variables in the form of strings.
+3) the Python file "strategy_environments_variables", which contains the environment variables that describe the main operational parameters of the strategy. The "SYMBOL" variable (string) describes the TAG of the asset in which we intend to invest. "LOT" (decimal) is a number that describes the amount of each investment. On the other hand, the "MAGIC" variable wing (integer) must provide the arbitrary "number plate" that will allow us to distinguish the operations performed by different strategies that operate simultaneously on the emdth account, and obviously helps us to avoid that the different strategies conflict between They.
+4) the Python file "name_strategy.py", which will be the script that we would actually execute to make the strategy operational by putting it on the market.
+5) the "info_strategy.md" file in which all the information relating to the strategy in question and the optimal setting of the parameters are entered.
+
+### Usage:
+
+Here is the procedure to follow to start the example scripts or strategies:
+1) download the project from github and insert it preferably in the path "C: \" (a generic location is fine too).
+2) Open "Anaconda powershell prompt" on your pc.
+3) Enter the following command in the prompt "cd <path \ to \ pyTrading-main>", where instead of <path \ to \ pyTrading-main> the path of the "pyTrading" project folder must be entered. Note: if the folder has been placed in the path "C: \" the command is "cd C: \ pyTrading-main".
+4) If you want to execute a strategy, execute the command "python strategies \ name_strategy \ name_strategy.py", where instead of "name_strategy.py" we will enter the name of the python script relating to the strategy we intend to execute. Note: in the case of the "ROC" strategy, for example, the command will be "python strategies \ ROC_strategy \ ROC_strategy.py".
+5) Similarly to run the example scripts enter the following command "python examples \ name_example.py".
+
+### Future additions:
+
+1) new strategies will be periodically added to the "strategies" directory.
+2) the "strategy_environments_variables.py" file will be extended in such a way as to allow the adjustment of various parameters with different methodologies, for example the possibility of determining the capital to invest per single operation as a percentage of the available capital (and not only in absolute value as a multiple of "lots")
+3) new functions will be developed to simplify the initialization of the strategy and the marketing of the operations, so as to make the code of the strategies "cleaner".
+4) BeckTesting functionalities will be included.
+
+
+
+
+# pyTrading(ita) 
 
 ### Prerequisiti:
 
