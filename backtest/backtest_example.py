@@ -19,12 +19,7 @@ class SmaCross(Strategy):
         elif crossover(self.sma2, self.sma1):
             self.sell()
 
-print(GOOG)
-print(type(GOOG))
-from utility import *
-data = convert_from_array_to_dataframe(rates)
-print(data)
-bt = Backtest(data, SmaCross,
+bt = Backtest(GOOG, SmaCross,
               cash=10000, commission=.002,
               exclusive_orders=True)
 
