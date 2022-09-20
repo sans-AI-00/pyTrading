@@ -37,6 +37,6 @@ if __name__ == "__main__":
     print("\n")
     data_as_dataframe = convert_from_array_to_dataframe(data_as_array)
 
-    print("=" * 15 + "Data as dataframe:" + "=" * 15)
+    print("=" * 15 + "Data as dataframe" + "=" * 15)
     print(data_as_dataframe)
     print("\n")
