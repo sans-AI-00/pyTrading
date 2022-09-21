@@ -4,6 +4,7 @@ from login_environments_variables import LOGIN, SERVER, PATH, PASSWORD
 # from datetime import datetime
 # import time
 
+
 def convert_from_array_to_dataframe(data):
     data_as_dict = {"Open": [], "High": [], "Low": [], "Close": [], "Volume": []}
     keys = ("Open", "High", "Low", "Close", "Volume")
@@ -20,6 +21,14 @@ def convert_from_array_to_dataframe(data):
 
     return data_as_dataframe
 
+
+def get_from_dataframe(dataframe, column="close"):
+
+    columns = ("open", "high", "low", "close", "volume")
+    index = columns.index(column)
+    output = dataframe.values[:, index]
+
+    return output
 #######################################################################
 ############################# EXAMPLE #################################
 
@@ -40,3 +49,9 @@ if __name__ == "__main__":
     print("=" * 15 + "Data as dataframe" + "=" * 15)
     print(data_as_dataframe)
     print("\n")
+
+    close_values = get_from_dataframe(data_as_dataframe, "close")
+    print("=" * 15 + "Get 'close' column" + "=" * 15)
+    print(close_values)
+
+

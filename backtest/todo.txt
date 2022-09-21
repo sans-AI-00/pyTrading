@@ -1,10 +1,6 @@
-# adatta storico di un asset al formato dataframe richiesto
-# sviluppa un funzione che prende in input storico adattato e lo fornisce all'indicatore
-# fai in modo tale che l'output venga ri-adattato
+# aggiungi indice temporale al dataframe
+# funzione from dataframe to indicators
 # permetti la chiusura manuale di operazioni in base ad un sistema di ID delle operazioni
 
 
-# crea strategia utilizzando A.I e ottimizzando stop loss e take profit
- # quando segnale dice buy -> compro con certo take profit e stop loss
- # analogamente per il sell
 
