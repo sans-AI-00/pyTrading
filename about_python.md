@@ -13,6 +13,9 @@ Dunque ti lascio solo immaginare le opportunità lavorative che si creeranno nel
 
 Un ruolo cruciale è svolto dalla documentazione (python 3.9), essa è una raccolta di materiale ed informazioni che racchiude tutto ciò che c’è da sapere sul linguaggio Python. [Cliccando qui](https://docs.python.org/3/) puoi accedere alla documentazione online. 
 Osserviamola brevemente per renderci conto di che si tratta. Nel seguente riquadro in alto a destra è possibile selezionare la versione di Python, nel nostro caso la 3.9.
+
+![Cattura](https://user-images.githubusercontent.com/105428493/192248391-2d699e21-ea64-4f3f-9803-0b9ce94d8cdd.PNG)
+
 Nella voce [tutorial](https://docs.python.org/3.9/tutorial/index.html) puoi trovare utili esempi di utilizzo del linguaggio di programmazione, mentre nella voce [library reference](https://docs.python.org/3.9/library/index.html) sono contenute informazioni riguardo le operazioni e le funzioni urilizzabili in Python. E dando un primo sguardo potrai renderti conto che sono molte. Invece cliaccando su [language reference](https://docs.python.org/3.9/reference/index.html) si ottengono informazioni riguardo la sintassi del codice, ossia le regole di scrittura da seguire al fine di scrivere un codice privo di errori e dunque eseguibile dal compilatore python. La sintassi è sostanzialmente la grammatica del linguaggio, e in quanto tale è essenziale.
 
 Il compilatore python, anche detto interprete, è l’elemento fondamentale che, appunto, interpreta il codice scritto da noi convertendolo in operazioni concrete eseguite dal nostro computer.
@@ -42,6 +45,9 @@ So I leave you only to imagine the job opportunities that will create when you k
 
 A crucial role is played by the documentation (python 3.9), it is a collection of material and information that contains everything there is to know about the Python language. [By clicking here](https://docs.python.org/3/) you can access the online documentation.
 Let's look at it briefly to realize what it is. In the following box at the top right you can select the Python version, in our case 3.9.
+
+![Cattura](https://user-images.githubusercontent.com/105428493/192248391-2d699e21-ea64-4f3f-9803-0b9ce94d8cdd.PNG)
+
 In the [tutorial](https://docs.python.org/3.9/tutorial/index.html) item you can find useful examples of using the programming language, while in the [library reference](https://docs.python.org/3.9/library/index.html) item you can find information about the operations and functions that can be used in Python. And taking a first look you will realize that there are many. Instead, clicking on [language reference](https://docs.python.org/3.9/reference/index.html) you get information about the syntax of the code, that is the writing rules to follow in order to write a code without errors and therefore executable by the python compiler. Syntax is basically the grammar of language, and as such it is essential.
 
 The python compiler, also called interpreter, is the fundamental element that, in fact, interprets the code written by us by converting it into concrete operations performed by our computer.
