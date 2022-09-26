@@ -23,8 +23,24 @@ The period, in our case, is two days.
 Basically the concept is based on going for bullish operations when the long-term and medium-term ROC indicate that there is an uptrend. The "market" entry signal is realized when the short-term ROC crosses the zero line upwards, this is because it means that there is a change in trend from bearish to bullish.
 The exit from the market of the operation occurs when the short-term ROC crosses down the line set at minus five. This exit function will represent our "stop loss" or our "take profit", depending on whether the transaction will be positive or negative.
 
+## Back Test
+
+From Charles Dow's theory of trends, we now know that the more we decrease the observation time horizon, the more the margin of error on identifying the dominant trend will increase. It would therefore be counterproductive to waste time testing our trading program on shorter time intervals than the daily one. In this case we will use the two days as the time frame as seen in the figure.
+First you need to download the application from the official “Pro real time” website. Once the screen is open, you need to implement the strategy on a chart you want to start from. Normally, momentum strategies, which indicate the strength of a trend, are used on the stock markets. Therefore, we will consider, in the backtest phase, the CAMTEK title.
+
 ![image](https://user-images.githubusercontent.com/105428493/192235039-3f2ca3b6-6982-4494-9ea3-207e7f3fc0c9.png)
 
+Using the "add" item seen in the figure, we insert the three Momentum indicators: the Price Rate of Change
+
+![image](https://user-images.githubusercontent.com/105428493/192235614-fd293b80-bcd9-4e9e-9f8d-20a48ddc1d3d.png)
+
+From Charles Dow's theory of trends, we now know that the more we decrease the observation time horizon, the more the margin of error on identifying the dominant trend will increase. It would therefore be counterproductive to waste time testing our trading program on shorter time intervals than the daily one. In this case we will use the two days as the time frame as seen in the figure.
+
+![image](https://user-images.githubusercontent.com/105428493/192236110-1d247d00-622a-4b3c-afd9-cf8e4d9535fd.png)
+
+Now we just have to manually check the goodness of our strategy. The strategy profited twice out of three times. The blue arrows represent trades closed in profit, while the orange “xs” represent lost trades. (see figure) Since the strategy does not seem to have a high frequency, we will pass to the backtest automatically in order to evaluate its effectiveness, which seems apparently positive.
+
+![image](https://user-images.githubusercontent.com/105428493/192236318-124bae92-bdd9-4c4e-a4b6-0d6defdfcca3.png)
 
 
 
@@ -70,6 +86,8 @@ Dalla teoria di Charles Dow dei trend,  sappiamo ormai che più diminuiamo l’o
 ![image](https://user-images.githubusercontent.com/105428493/192236110-1d247d00-622a-4b3c-afd9-cf8e4d9535fd.png)
 
 Ora non ci resta che verificare manualmente la bontà della nostra strategia. La strategia è andata in profitto due volte su tre. Le frecce blu rappresentano le operazioni chiuse in profitto, mentre le “x” arancioni rappresentano i trade persi. (vedi figura) Dato che la strategia non sembra avere un elevata frequenza passeremo al backtest in forma automatica cosi da valutarne l’efficacia, che sembra apparentemente positiva.
+
+![image](https://user-images.githubusercontent.com/105428493/192236318-124bae92-bdd9-4c4e-a4b6-0d6defdfcca3.png)
 
 
 
