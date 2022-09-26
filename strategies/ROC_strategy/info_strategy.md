@@ -23,6 +23,8 @@ The period, in our case, is two days.
 Basically the concept is based on going for bullish operations when the long-term and medium-term ROC indicate that there is an uptrend. The "market" entry signal is realized when the short-term ROC crosses the zero line upwards, this is because it means that there is a change in trend from bearish to bullish.
 The exit from the market of the operation occurs when the short-term ROC crosses down the line set at minus five. This exit function will represent our "stop loss" or our "take profit", depending on whether the transaction will be positive or negative.
 
+![image](https://user-images.githubusercontent.com/105428493/192235039-3f2ca3b6-6982-4494-9ea3-207e7f3fc0c9.png)
+
 
 
 
@@ -50,3 +52,17 @@ Gli indicatori utilizzati saranno :
 Il periodo, nel nostro caso, vale due giorni.
 Di base il concetto si basa sull’andare a fare operazioni rialziste quando il ROC di lungo termine e di medio termine indicano che c’è un trend rialzista. Il segnale di ingresso “a mercato” si realizza quando il ROC di breve termine incrocia la linea dello zero a rialzo, questo perché significa che c’è un cambiamento di trend da ribassista a rialzista.
 L’uscita dal mercato dell’operazione si verifica quando il ROC di breve termine incrocia a ribasso la linea impostata a meno cinque. Tale funzione di uscita rappresenterà il nostro “stop loss” o il nostro “take profit”, a seconda se l’operazione sarà positiva o negativa.
+
+## Back Test
+
+Prima di avviare un codice di programmazione bisognerebbe verificare la validità della strategia manualmente, cosi da dedicarsi principalmente alla fase di backtest.
+Nel capitolo precedente abbiamo utilizzato la piattaforma “Trading View”. Ora proveremo ad effettuare gli stessi ragionamenti sulla piattaforma Pro Real Time, che ci consentirà  attraverso il linguaggio “Pro Builder” di generare il nostro Expert Advisor e quindi il software di programmazione.
+Per prima cosa bisogna scaricare l’applicazione dal sito web ufficiale “Pro real time”. Una volta aperta la schermata bisogna implementare la strategia su un grafico da cui si vuole partire. Normalmente, le strategie di momentum, che indicano la forza di un trend, vengono utilizzate sui mercati azionari. Pertanto, considereremo , in fase di backtest, il titolo CAMTEK. 
+
+![image](https://user-images.githubusercontent.com/105428493/192235039-3f2ca3b6-6982-4494-9ea3-207e7f3fc0c9.png)
+
+Attraverso la voce “aggiungi” vista in figura  inseriamo i tre indicatori di Momentum : i Price Rate of Change
+
+
+
+
