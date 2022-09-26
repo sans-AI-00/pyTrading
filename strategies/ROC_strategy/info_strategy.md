@@ -89,6 +89,33 @@ Ora non ci resta che verificare manualmente la bontà della nostra strategia. La
 
 ![image](https://user-images.githubusercontent.com/105428493/192236318-124bae92-bdd9-4c4e-a4b6-0d6defdfcca3.png)
 
+## Sviluppo codice e analisi risultati
+
+Dopo aver ideato una strategia e dopo averla testata manualmente non resta che generare un trading system automatizzato. Ci sono diverse teorie su questa materia, in quanto vasta e molto affascinante. L’idea di poter far eseguire ad una macchina le proprie operazioni, annichilendo gli aspetti emotivi è qualcosa di altrettanto sorprendente. Per la creazione di un robot automatico c’è bisogno di avere dimestichezza con diversi linguaggi di programmazione. In questo capitolo tratteremo i linguaggi ProBuilder e Python. 
+
+ProBuilder è un linguaggio di programmazione utilizzato sulla piattaforma ProRealTime. 
+Questo è molto facile da usare ed è definito il linguaggio dei trader, infatti, ci consente di costruire svariate strategie di trading in poco tempo. Tutto ciò grazie al fatto che tutte le funzioni e gli indicatori di trading sono inglobati in esso. Ciò non è banale e semplifica molto il nostro approccio, tant’è che in poche righe di codice potremmo sviluppare strategie complesse ed efficaci. Questo approccio viene preferito da molti analisti in quanto con esso si riesce a preservare il miglior investimento : il tempo! 
+ProBuilder è un linguaggio di programmazione che  consente l’utilizzo di numerosi comandi classici e più elaborati, specifici dell’analisi
+tecnica, che ci daranno la possibilità di programmare indicatori e trading system dai più semplici ai più sofisticati.
+Attraverso ProBuilder:
+Le variabili possono anche non essere dichiarate e definite
+Il tipo di variabile può non essere definito
+Minuscole e Maiuscole hanno lo stesso significato
+Viene usato un segno uguale per l’uguaglianza e l’attribuzione matematica
+
+Per costruire un robot automatico bisognerebbe quantomeno avere dimestichezza con le funzioni base del trading. Di seguito vengono elencate tutte quelle funzioni e tutti quei comandi  che stanno alla base di un trading program di successo e che ci serviranno per generare il nostro codice attraverso ProBuilder .
+Open : funzione che ci indica il valore di apertura della barra 
+Close: funzione che ci indica il valore di chiusura della barra 
+High: valore massimo di periodo
+Low: valore minimo di periodo
+Volume: Numero di contrattazioni scambiati in quel periodo
+Buy: consente di entrare a mercato in posizione di acquisto (long)
+SELL consente di chiudere a mercato una posizione di acquisto 
+SELLSHORT consente di entrare a mercato in posizione di vendita ( short)
+EXITSHORT consente di chiudere a mercato una posizione di vendita
+
+Ciò differenzia questo approccio rispetto ai più comuni. Infatti, queste funzioni non esistono in altri linguaggi di programmazione, pertanto probuilder risulta essere uno dei linguaggi preferiti dai trader.
+
 
 
 
