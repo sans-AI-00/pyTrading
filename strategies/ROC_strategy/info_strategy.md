@@ -67,6 +67,12 @@ Attraverso la voce “aggiungi” vista in figura  inseriamo i tre indicatori di
 
 Dalla teoria di Charles Dow dei trend,  sappiamo ormai che più diminuiamo l’orizzonte temporale di osservazione più il margine di errore sull’individuazione del trend dominante aumenterà. Risulterebbe, quindi controproducente perdere tempo nel  testare il nostro programma di trading su intervalli di tempo minori di quello giornaliero. In questo caso utilizzeremo come time frame i due giorni come visto in figura.
 
+![image](https://user-images.githubusercontent.com/105428493/192236110-1d247d00-622a-4b3c-afd9-cf8e4d9535fd.png)
+
+Ora non ci resta che verificare manualmente la bontà della nostra strategia. La strategia è andata in profitto due volte su tre. Le frecce blu rappresentano le operazioni chiuse in profitto, mentre le “x” arancioni rappresentano i trade persi. (vedi figura) Dato che la strategia non sembra avere un elevata frequenza passeremo al backtest in forma automatica cosi da valutarne l’efficacia, che sembra apparentemente positiva.
+
+
+
 
 
 
