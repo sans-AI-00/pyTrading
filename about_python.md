@@ -29,6 +29,61 @@ Simply put, an IDE, or integrated development environment, is software designed 
 
 First of all you will need to download the development environment, in the following links you can find the Pycharm [download page](https://www.jetbrains.com/pycharm/download/#section=windows) and [installation instructions](https://www.youtube.com/watch?v=SZUNUB6nz3g). You have the opportunity to download two different versions, I recommend that you download the "Community" version as it is free but at the same time complete with all the tools you need to program at a professional level.
 
+## Variables
+
+We are inside Pycharm, a development software, also called IDE, which offers useful tools for writing code in the Python language. What you can see is the Python console that will allow us to write code interactively, running a single command at a time. As usually happens when we enter commands inside the terminal of our computer. Later in the course we will instead begin to write real scripts, that is, files similar to text documents composed of different commands written on top of each other, and automatically executed by the computer in an order that goes from top to bottom.
+
+Python allows us to manage different types of data, in this lesson we will use two very common types, namely strings and integers. A string type data is defined by the use of quotes as follows:
+
+__'string'
+(type enter) __
+
+or similarly through the use of double quotes
+
+__"string"
+(type enter) __
+
+the content represented by this type of data is nothing more than a sequence of characters of variable length, ie a text. And it is typically characterized by the green color.
+
+While an integer numeric data will be trivially represented by a sequence of digits. The characteristic color in this case is blue (azure).
+
+__123
+(type enter) __
+
+In both cases, typing the data in the command line and pressing enter we obtain, in the line immediately following, the representation of the data itself.
+
+
+The first concept of fundamental importance in language is the concept of variable. We can imagine it as a container capable of hosting a data among those allowed in the Python language.
+
+The variable itself is represented by the name that we decide to associate with it, it acts as a label thanks to which we can recall at any time the data it hosts inside.
+
+Therefore the correct syntax to associate a data, that is a value, to the variable is the following
+
+__container = 123
+(type enter) __
+
+To the left of the "=" sign we have written the name of our variable. we can choose any name of our imagination for the variable, in this case we have decided to call it "container". While to the right of the equal we have written the value that will be inserted inside the variable. The symbol "=" is the fulcrum of this command and is used to make the compiler understand, once the command has been read, that our intention is precisely to associate the numerical data consisting of the digits to the variable named "container" 123.
+
+We can choose any name for our variable, as long as it doesn't contain spaces.
+
+It is interesting to note that, unlike other languages ​​such as "C", it was not necessary to define the type of variable before assigning its value. In fact, the Python compiler is able to automatically detect the type of data that we have decided to insert into it.
+
+Once we type our variable and send the command, it is treated by the compiler just like the data it hosts inside it.
+
+__container
+(type enter) __
+
+Therefore there is no difference between the variable and the data we associate with it. It is a powerful tool that allows us to carry a certain data with us while writing a script, without having to remember each time what value it has, but simply calling it by name.
+
+## Functions
+
+
+
+
+
+
+
+
 
 # Cos'è Python ?
 
@@ -63,7 +118,7 @@ Prima di tutto dovrai scaricare l’ambiente di sviluppo, nei seguenti link potr
 
 ## Variabili
 
-Siamo all’interno Pycharm , un software di sviluppo, anche detto IDE, che offre strumenti utili per la scrittura di codice nel linguaggio Python. Questa che potete osservare  è  la console di Python che ci permetterà di scrivere codice in maniera interattiva, eseguendo un singolo comando alla volta. Come avviene solitamente quando inseriamo comandi all’interno del terminale del nostro computer. Più avanti nel corso inizieremo invece a scrivere veri e propri script, ossia file simili a documenti di testo composti da diversi comandi scritti uno sull’altro, ed eseguiti in modo automatico dal computer seguendo un ordine che va dall’alto verso il basso.
+Siamo all’interno di Pycharm , un software di sviluppo, anche detto IDE, che offre strumenti utili per la scrittura di codice nel linguaggio Python. Questa che potete osservare  è  la console di Python che ci permetterà di scrivere codice in maniera interattiva, eseguendo un singolo comando alla volta. Come avviene solitamente quando inseriamo comandi all’interno del terminale del nostro computer. Più avanti nel corso inizieremo invece a scrivere veri e propri script, ossia file simili a documenti di testo composti da diversi comandi scritti uno sull’altro, ed eseguiti in modo automatico dal computer seguendo un ordine che va dall’alto verso il basso.
 
 Python ci permette di gestire diversi tipi di dati,in questa lezione utilizzeremo due tipi molto comuni,  ossia le stringhe e i numeri interi. Un dato di tipo stringa è definito mediante l’uso degli apici nel seguente modo:
 
