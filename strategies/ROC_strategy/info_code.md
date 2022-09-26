@@ -1,5 +1,24 @@
 # Useful information(eng)
 
+## Simplified description of python code:
+line 1-5: We import the global variables to connect to the Meta Trader 5 terminal (__login_environments_variables__) and the operational parameters of the strategy (__strategy_environments_variables__), as well as external libraries containing useful functions that we will use within the code. The __Metatrader5_ lyricist provides useful functions for financial_commands to the Meta Trader 5 platform, _ contains functions that implement technical analysis tools that we will use within the strategy, finally the __time__ strategy module provides useful functions for the arrangement of dates and timetables.
+
+line 8-9: you print a video information about the author of the MetaTrader5 library and the current version you are using.
+
+line 16-19: the following lines of code are used for a connection with the Meta Trader 5 terminal. Personal login variables for the Meta Trader 5 platform are provided as input.
+
+line 22-32: in the following lines of code an attempt is made to access the trading platform using the user's personal login variables.
+
+line 37-42: in the following code block you define the variables that the program must "keep in mind" when executing the strategy. The *** cnt *** variable takes into account how many times the strategy has gone to obtain information from the market. The variable *** orders *** is a list in which the 'tickets' relating to the orders placed will be contained. The other variables instead represent the 4 conditions (3 of purchase and 1 of sale) that the strategy will use to operate, these variables are called "boolean" and can assume the logical values "True" and "False".
+
+line 44-169: the entire block contains the actual code that will be executed to perform market operations. It consists of 5 sub-blocks:
+1) line 46-56: within this block, useful information is taken, the capital available for operations (*** margin free ***) and the total capital (*** balance ***). In addition, the current values of the ROC are taken for the three selected periods (20,50,100 periods).
+2) line 60-82: the purchase and sale conditions are evaluated in the following lines. In detail, for the purchase conditions, it is observed if the ROC, valued over 100 periods and 50 periods, is greater than zero, and also if the 20-period ROC has crossed upwards the value 0. For the condition of sale, instead, the signal it triggers when the 20-period ROC crosses down the -5 value.
+3) line 85-105: the following block contains the lines of code useful for generating the graphic output that shows the current key parameters of the account, for example free margin, total capital, open and closed operations, etc.
+4) line 107-134: in the following lines of code it is evaluated if the purchase conditions are all valid, if so, a purchase order is executed using the amount expressed in "lots" by the global variable *** LOT ** as the amount *, with assets on which to operate defined by the variable *** SYMBOL ***. Furthermore, for this strategy "stop loss" and "take profit" are absent. If the purchase operation is carried out, the relative ticket is stored to be used when the position is closed.
+5) line 136-167: in the following lines of code it is evaluated whether the conditions of sale are all valid, if so, the orders identified by the relative "ticket" are closed.
+
+
 ## Python code description:
 line 1-5: import all the libraries necessary for the correct functioning of the code.
 From ***strategy_environments_variables*** we import the global variables ***SYMBOL***, ***LOT*** and ***MAGIC***, which define
@@ -105,7 +124,28 @@ line 169: the command ***cnt + = 1*** at the end of each cycle increases by 1 th
 
 # Informazioni utili(ita)
 
-## Descrizione codice python:
+## Descrizione semplificata codice python:
+riga 1-5: Si importano le variabili globali per effettuare la connessione al terminale di Meta Trader 5 (__login_environments_variables__) e i parametri operativi della strategia (__strategy_environments_variables__), oltre alle librerie esterne contenenti funzioni utili che utilizzeremo all'interno del codice. La lireria __Metatrader5__ mette a disposizione funzioni utili per inviare comandi alla piattaforma Meta Trader 5, __financial_tools__ contiene funzioni che implementano strumenti di analisi tecnica che andremo ad utilizzare all'interno della strategia, infine il modulo __time__ mette a disposizione funzioni utili per la manipolazione di date ed orari.
+
+riga 8-9: si stampano a video informazioni riguardanti l'autore della libreria MetaTrader5 e la versione corrente che si sta utilizzando.
+
+riga 16-19: le seguenti righe di codice sono utilizzate per stabilire una connessione con il terminale di Meta Trader 5. Sono fornite in input le variabili personali di login alla piattaforma Meta Trader 5.
+
+riga 22-32: nelle seguenti righe di codice si effettua un tentativo di accesso alla piattaforma di trading utilizzando le variabili di login personali dell'utente.
+
+riga 37-42: nel seguente blocco di codice si definiscono le variabili che il programma dovrà "tenere a mente" durante l'esezucione della strategia. La variabile ***cnt*** tiene il conto di quante volte la strategia è andata a prelevare informazioni dal mercato. La variabile ***orders*** è una lista all'interno della quale saranno contenuti i 'tickets' relativi a gli ordini effettuati. Le altre variabili invece rappresentato le 4 condizioni (3 di acquisto e 1 di vendita) che la startegia utilizzerà per operare, tali variabili sono dette "boleane" è possono assumere i valori logici "True" e "False".
+
+riga 44-169: l'intero blocco contiene il codice effettivo che verrà eseguito per effettuare operazioni a mercato. Esso si compone di 5 sotto blocchi:
+1) riga 46-56: all'interno di questo questo blocco si prelevano informazioni utili, il capitale disponibile per le operazioni (***margin free***) ed il capitale totale (***balance***). Inoltre si prelevano i valori attuali del ROC per i tre periodi selezionati (20,50,100 periodi).
+2) riga 60-82: nelle seguenti righe si valutano le condizioni di acquisto e di vendita. Nel dettaglio per le condizioni di acquisto si osserva se il ROC, valutato su 100 periodi e 50 periodi, è maggiore di zero, ed inoltre se il ROC a 20 periodi ha incrociato a rialzo il valore 0. Per la condizione di vendita invece il segnale scatta quando il ROC a 20 periodi incrocia a ribasso il valore -5.
+3) riga 85-105: nel seguente blocco sono contenute le righe di codice utili alla generazione dell'output grafico che riporta i parametri chiave attuali del conto, ad esmepio margine libero, capitale totale, operazioni aperte e chiuse etc.. 
+4) riga 107-134: nelle seguenti righe di codice si valuta se le condizioni di acquisto sono tutte valide, in caso affermativo si esegue un ordine di acquisto utilizzando come importo quello espresso in "lotti" dalla variabile globale ***LOT***, con asset su cui operare definito dalla variabile ***SYMBOL***. Inoltre per tale strategia "stop loss" e "take profit" sono assenti. Se l'operazione di acquisto viene effettuata il relativo tickets viene memorizzato per essere poi utilizzato al momento della chiusura della posizione.
+5) riga 136-167: nelle seguenti righe di codice si valuta se le condizioni di vendita sono tutte valide, in caso affermativo si effettua la chiusura degli ordini identificati dal relativo "ticket".
+
+
+
+
+## Descrizione completa codice python:
 riga 1-5: si ffettua l'importazione di tutte le librerie necessarie per il corretto funzionamento del codice. 
 Da ***strategy_environments_variables*** si importano le varibili globali ***SYMBOL***, ***LOT*** e ***MAGIC***, le quali definiscono 
 l'asset sul quale operiamo, l'importo di ogni investimento e la targa identificativa dell'EA che si intende mettere a mercato.
@@ -132,7 +172,7 @@ Se la variabile ***authorized*** è ***False*** viene stampato a video un messag
 Per maggiori info vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5login_py , https://www.mql5.com/it/docs/integration/python_metatrader5/mt5accountinfo_py .
 
 riga 37-42: Inizializiamo le seguenti variabili:
-1) ***cnt*** è una variabile di tipo "intero" che tiene il conto di quante volte lo script è andato ad ***interrogare*** l'API di Meta Trader 5 al fie di prelevare le informazioni utili sui prezzi ed eventualmente inviare comandi da fa eseguire all'API stessa (ad esempio ordini di acquisto e vendita). 
+1) ***cnt*** è una variabile di tipo "intero" che tiene il conto di quante volte lo script è andato ad ***interrogare*** l'API di Meta Trader 5 al fine di prelevare le informazioni utili sui prezzi ed eventualmente inviare comandi da fa eseguire all'API stessa (ad esempio ordini di acquisto e vendita). 
 2) ***orders*** è una variabile di tipo "lista" all'interno della quale si inseriscono i "ticket" degli ordini eseguiti, per tenere traccia delle operazioni effettuate, così da poterle richiamare per eventuali modifiche o chiusure in momenti successivi.
 3) ***long_condition_1***, ***long_condition_2***, ***long_condition_3*** e ***close_condition***, sono variaibli boleane che rappresentano le condizioni long e short della strategia. Inizialmente esse sono tutte inizializzate con valore ***False***.
 
