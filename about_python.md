@@ -33,6 +33,8 @@ First of all you will need to download the development environment, in the follo
 
 We are inside Pycharm, a development software, also called IDE, which offers useful tools for writing code in the Python language. What you can see is the Python console that will allow us to write code interactively, running a single command at a time. As usually happens when we enter commands inside the terminal of our computer. Later in the course we will instead begin to write real scripts, that is, files similar to text documents composed of different commands written on top of each other, and automatically executed by the computer in an order that goes from top to bottom.
 
+![Cattura](https://user-images.githubusercontent.com/105428493/192253741-41371f9e-1819-4cf0-b6d1-340c44b798f5.PNG)
+
 Python allows us to manage different types of data, in this lesson we will use two very common types, namely strings and integers. A string type data is defined by the use of quotes as follows:
 
 __'string'
@@ -119,6 +121,8 @@ Prima di tutto dovrai scaricare l’ambiente di sviluppo, nei seguenti link potr
 ## Variabili
 
 Siamo all’interno di Pycharm , un software di sviluppo, anche detto IDE, che offre strumenti utili per la scrittura di codice nel linguaggio Python. Questa che potete osservare  è  la console di Python che ci permetterà di scrivere codice in maniera interattiva, eseguendo un singolo comando alla volta. Come avviene solitamente quando inseriamo comandi all’interno del terminale del nostro computer. Più avanti nel corso inizieremo invece a scrivere veri e propri script, ossia file simili a documenti di testo composti da diversi comandi scritti uno sull’altro, ed eseguiti in modo automatico dal computer seguendo un ordine che va dall’alto verso il basso.
+
+![Cattura](https://user-images.githubusercontent.com/105428493/192253741-41371f9e-1819-4cf0-b6d1-340c44b798f5.PNG)
 
 Python ci permette di gestire diversi tipi di dati,in questa lezione utilizzeremo due tipi molto comuni,  ossia le stringhe e i numeri interi. Un dato di tipo stringa è definito mediante l’uso degli apici nel seguente modo:
 
