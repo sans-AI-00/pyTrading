@@ -21,7 +21,7 @@ So if ***authorized*** is ***True*** the following commands are carried out:
 1) the ***print (mt5.account_info ()) function*** prints the main information of the personal account of the Meta Trader 5 account on the screen.
 2) with the command ***account_info_dict = mt5.account_info () ._ asdict ()*** we associate to the variable ***account_info_dic*** the account information converted into "dictionary" format
 3) then with the command ***print ("{} = {}". Format (prop, account_info_dict [prop]))*** let's print this information by extracting it one after the other from the ***account_info_dict*** variable "cycling" on the ***prop*** value which at each cycle takes on the value of the next key of the information dictionary.
-4) if the ***authorized*** variable is ***False*** an error message is printed on the screen using the ***print command ("failure to connect to account # {}, error code: {} ". format (26947266, mt5.last_error ()))***.
+If the ***authorized*** variable is ***False*** an error message is printed on the screen using the ***print command ("failure to connect to account # {}, error code: {} ". format (26947266, mt5.last_error ()))***.
 
 For more info see https://www.mql5.com/it/docs/integration/python_metatrader5/mt5login_py, https://www.mql5.com/it/docs/integration/python_metatrader5/mt5accountinfo_py.
 
@@ -125,7 +125,7 @@ Dunque se ***authorized*** è ***True*** si effettuano i seguenti comandi:
 1) la funzione ***print(mt5.account_info())*** stampa a video le informazioni principali dell'account personale del conto Meta Trader 5.
 2) con il comando ***account_info_dict = mt5.account_info()._asdict()*** associamo alla variabile ***account_info_dic*** le informazioni dell'account convertite in formato di "dizionario"
 3) dunque con il comando ***print("  {}={}".format(prop, account_info_dict[prop]))*** andiamo a stampare tali informazioni estraendole una dopo l'altra dalla variabile ***account_info_dict*** "ciclando" sul valore ***prop*** che ad ogni ciclo assume il valore della chiave successiva del dizionario delle informazioni.
-4) se la variabile ***authorized*** è ***False*** viene stampato a video un messaggio di errore mediante il comando ***print("fallimento nella connessione all'account #{}, error code: {}".format(26947266, mt5.last_error()))***.
+Se la variabile ***authorized*** è ***False*** viene stampato a video un messaggio di errore mediante il comando ***print("fallimento nella connessione all'account #{}, error code: {}".format(26947266, mt5.last_error()))***.
 
 Per maggiori info vedere https://www.mql5.com/it/docs/integration/python_metatrader5/mt5login_py , https://www.mql5.com/it/docs/integration/python_metatrader5/mt5accountinfo_py .
 
