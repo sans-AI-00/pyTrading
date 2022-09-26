@@ -1,3 +1,35 @@
+
+# What is Python?
+
+## Introduction
+
+So what is Python? Python by definition is a "high-level", object-oriented programming language.
+To find out more about the meaning of these words, and to find out much more about the language and its history, I left you a link in the description where you can dare to take a look at the Python wikipedia page.
+Furthermore, the more determined, always in the description, can find the link that points to a very exhaustive and practical pdf document on programming in python.
+
+The best way to understand what Python is, besides of course practicing it, is to understand what you will be able to do thanks to its knowledge. Python has a huge amount of importable libraries, each specific to a particular use case. A library is nothing more than a set of functions that you can import and therefore use within your code, and we will better see what it is about in the following videos of the course. Basically Python offers a library of functions already incorporated into the language, called the standard library, which does not require an import process. It is possible to find libraries for every use in a completely free and free way, for example machine learning and artificial intelligence, web automation and data scriping (i.e. the so-called bots), automatic trading, blockchain and smart contracts, network analysis (for example social networks) and also development of graphic interfaces for webapps, smartphone applications, software and websites. These are just a few use cases, and I could stay here talking about them for months.
+
+So I leave you only to imagine the job opportunities that will create when you know how to handle this powerful programming language, obviously also based on the level of knowledge and use you have, but believe me when I tell you that it is never too late to start. Personally, it took me a year of planning to get to professional levels, and I think you should take even less time with the commitment.
+
+A crucial role is played by the documentation (python 3.9), it is a collection of material and information that contains everything there is to know about the Python language. [By clicking here](https://docs.python.org/3/) you can access the online documentation.
+Let's look at it briefly to realize what it is. In the following box at the top right you can select the Python version, in our case 3.9.
+
+![Cattura](https://user-images.githubusercontent.com/105428493/192248391-2d699e21-ea64-4f3f-9803-0b9ce94d8cdd.PNG)
+
+In the [tutorial](https://docs.python.org/3.9/tutorial/index.html) item you can find useful examples of using the programming language, while in the [library reference](https://docs.python.org/3.9/library/index.html) item you can find information about the operations and functions that can be used in Python. And taking a first look you will realize that there are many. Instead, clicking on [language reference](https://docs.python.org/3.9/reference/index.html) you get information about the syntax of the code, that is the writing rules to follow in order to write a code without errors and therefore executable by the python compiler. Syntax is basically the grammar of language, and as such it is essential.
+
+The python compiler, also called interpreter, is the fundamental element that, in fact, interprets the code written by us by converting it into concrete operations performed by our computer.
+
+Even if the content to learn seems to be a lot, do not be discouraged, you will only use a part of it and you do not need to have everything in mind, the programmer's ability in fact lies in knowing how to identify what is needed when necessary and take advantage of the documentation available on the net. to identify and use the correct tool according to your needs.
+
+I want to clarify that the network and the various communities that populate it will be your main ally in language learning. Whenever you encounter a problem, you can be sure that 99% will have already been faced by someone else, who will have wisely exposed it on a special site where many kind-hearted programmers have provided their solution.
+
+We will write and execute the python code thanks to a special development software, generally referred to by the term "IDE". If you don't know what an IDE is, I'll explain it to you briefly.
+Simply put, an IDE, or integrated development environment, is software designed for building applications that combines common development tools into a single graphical user interface. Where by development tools we mean tools useful for writing code, in this case, in fact, Python code. The IDE we will use is called Pycharm and in my opinion it is one of the best for Python, if not perhaps the best IDE out there.
+
+First of all you will need to download the development environment, in the following links you can find the Pycharm [download page](https://www.jetbrains.com/pycharm/download/#section=windows) and [installation instructions](https://www.youtube.com/watch?v=SZUNUB6nz3g). You have the opportunity to download two different versions, I recommend that you download the "Community" version as it is free but at the same time complete with all the tools you need to program at a professional level.
+
+
 # Cos'è Python ?
 
 ## Introduzione
@@ -31,32 +63,3 @@ Prima di tutto dovrai scaricare l’ambiente di sviluppo, nei seguenti link potr
 
 
 
-# What is Python?
-
-## Introduction
-
-So what is Python? Python by definition is a "high-level", object-oriented programming language.
-To find out more about the meaning of these words, and to find out much more about the language and its history, I left you a link in the description where you can dare to take a look at the Python wikipedia page.
-Furthermore, the more determined, always in the description, can find the link that points to a very exhaustive and practical pdf document on programming in python.
-
-The best way to understand what Python is, besides of course practicing it, is to understand what you will be able to do thanks to its knowledge. Python has a huge amount of importable libraries, each specific to a particular use case. A library is nothing more than a set of functions that you can import and therefore use within your code, and we will better see what it is about in the following videos of the course. Basically Python offers a library of functions already incorporated into the language, called the standard library, which does not require an import process. It is possible to find libraries for every use in a completely free and free way, for example machine learning and artificial intelligence, web automation and data scriping (i.e. the so-called bots), automatic trading, blockchain and smart contracts, network analysis (for example social networks) and also development of graphic interfaces for webapps, smartphone applications, software and websites. These are just a few use cases, and I could stay here talking about them for months.
-
-So I leave you only to imagine the job opportunities that will create when you know how to handle this powerful programming language, obviously also based on the level of knowledge and use you have, but believe me when I tell you that it is never too late to start. Personally, it took me a year of planning to get to professional levels, and I think you should take even less time with the commitment.
-
-A crucial role is played by the documentation (python 3.9), it is a collection of material and information that contains everything there is to know about the Python language. [By clicking here](https://docs.python.org/3/) you can access the online documentation.
-Let's look at it briefly to realize what it is. In the following box at the top right you can select the Python version, in our case 3.9.
-
-![Cattura](https://user-images.githubusercontent.com/105428493/192248391-2d699e21-ea64-4f3f-9803-0b9ce94d8cdd.PNG)
-
-In the [tutorial](https://docs.python.org/3.9/tutorial/index.html) item you can find useful examples of using the programming language, while in the [library reference](https://docs.python.org/3.9/library/index.html) item you can find information about the operations and functions that can be used in Python. And taking a first look you will realize that there are many. Instead, clicking on [language reference](https://docs.python.org/3.9/reference/index.html) you get information about the syntax of the code, that is the writing rules to follow in order to write a code without errors and therefore executable by the python compiler. Syntax is basically the grammar of language, and as such it is essential.
-
-The python compiler, also called interpreter, is the fundamental element that, in fact, interprets the code written by us by converting it into concrete operations performed by our computer.
-
-Even if the content to learn seems to be a lot, do not be discouraged, you will only use a part of it and you do not need to have everything in mind, the programmer's ability in fact lies in knowing how to identify what is needed when necessary and take advantage of the documentation available on the net. to identify and use the correct tool according to your needs.
-
-I want to clarify that the network and the various communities that populate it will be your main ally in language learning. Whenever you encounter a problem, you can be sure that 99% will have already been faced by someone else, who will have wisely exposed it on a special site where many kind-hearted programmers have provided their solution.
-
-We will write and execute the python code thanks to a special development software, generally referred to by the term "IDE". If you don't know what an IDE is, I'll explain it to you briefly.
-Simply put, an IDE, or integrated development environment, is software designed for building applications that combines common development tools into a single graphical user interface. Where by development tools we mean tools useful for writing code, in this case, in fact, Python code. The IDE we will use is called Pycharm and in my opinion it is one of the best for Python, if not perhaps the best IDE out there.
-
-First of all you will need to download the development environment, in the following links you can find the Pycharm [download page](https://www.jetbrains.com/pycharm/download/#section=windows) and [installation instructions](https://www.youtube.com/watch?v=SZUNUB6nz3g). You have the opportunity to download two different versions, I recommend that you download the "Community" version as it is free but at the same time complete with all the tools you need to program at a professional level.
