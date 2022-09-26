@@ -61,5 +61,52 @@ Un IDE, o ambiente di sviluppo integrato, in parole povere è un software proget
 
 Prima di tutto dovrai scaricare l’ambiente di sviluppo, nei seguenti link potrai trovare la [pagina per lo scaricamento](https://www.jetbrains.com/pycharm/download/#section=windows) e le [istruzioni per l’installazione](https://www.youtube.com/watch?v=SZUNUB6nz3g) di Pycharm. Hai l’opportunità di scaricare due versioni differenti, ti consiglio di scaricare la versione “Community” in quanto è gratuita ma allo stesso tempo completa di tutti gli strumenti necessari per programmare a livello professionale. 
 
+## Variabili
+
+Siamo all’interno Pycharm , un software di sviluppo, anche detto IDE, che offre strumenti utili per la scrittura di codice nel linguaggio Python. Questa che potete osservare  è  la console di Python che ci permetterà di scrivere codice in maniera interattiva, eseguendo un singolo comando alla volta. Come avviene solitamente quando inseriamo comandi all’interno del terminale del nostro computer. Più avanti nel corso inizieremo invece a scrivere veri e propri script, ossia file simili a documenti di testo composti da diversi comandi scritti uno sull’altro, ed eseguiti in modo automatico dal computer seguendo un ordine che va dall’alto verso il basso.
+
+Python ci permette di gestire diversi tipi di dati,in questa lezione utilizzeremo due tipi molto comuni,  ossia le stringhe e i numeri interi. Un dato di tipo stringa è definito mediante l’uso degli apici nel seguente modo:
+
+__‘stringa’
+(digitare invio)__
+
+o analogamente mediante l’utilizzo di doppi apici
+
+__“stringa”
+(digitare invio)__
+
+il contenuto rappresentato da questo tipo di dato altro non è che una sequenza di caratteri di lunghezza variabile, ossia un testo. Ed è  tipicamente caratterizzata dal colore verde.
+
+Mentre un dato di tipo numerico intero sarà banalmente rappresentato da una sequenza di cifre. Il colore caratteristico in questo caso è il blu (azzurro).
+
+__123
+(digitare invio)__
+
+In entrambi i casi digitando il dato nella riga di comando e premendo invio otteniamo, nella riga immediatamente successiva, la rappresentazione del dato stesso.
+
+
+Il primo concetto di fondamentale importanza nel linguaggio è il concetto di variabile. Possiamo immaginarla come  un contenitore capace di ospitare un dato tra quelli consentiti nel linguaggio Python.  
+
+La variabile è di per sé rappresentata dal nome che decidiamo di associargli, esso funge come un’etichetta grazie alla quale possiamo richiamare in qualunque momento il dato che ospita al suo interno all’interno. 
+
+Dunque la sintassi corretta per associare un dato, ossia un valore, alla variabile è la seguente
+
+__contenitore = 123
+(digitare invio)__
+
+Alla sinistra del segno “=” abbiamo scritto il nome della nostra variabile. possiamo scegliere un nome qualunque di nostra fantasia per la variabile, in questo caso abbiamo deciso di chiamarla “contenitore”. Mentre alla destra dell’uguale abbiamo scritto il valore che andrà inserito all’interno della variabile. Il simbolo “=” è il fulcro di questo comando è serve proprio a far capire al compilatore, una volta letto il comando, che la nostra intenzione è proprio quella di associare alla variabile di nome “contenitore” il dato di tipo numerico costituito dalle cifre 123.
+
+Possiamo scegliere qualunque nome per la nostra variabile, purché non contenga spazi.
+
+E’ interessante osservare che, a differenza di altri linguaggi come il “C”, non è stato necessario definire il tipo di variabile prima dell’assegnazione del suo valore. Infatti il compilatore di Python, è in grado di rilevare automaticamente il tipo di dato che abbiamo deciso di inserire al suo interno. 
+
+Una volta che digitiamo la nostra variabile e inviamo il comando, essa è trattata dal compilatore proprio come il dato che ospita al suo interno. 
+
+__contenitore
+(digitare invio)__
+
+Dunque non vi è alcuna differenza tra la variabile e il dato che associamo ad essa. Essa è uno strumento potente che ci permette di portarci dietro durante la scrittura di uno script un certo dato, senza doverci ricordare ogni volta che valore abbia, ma chiamandolo semplicemente per nome. 
+
+## Funzioni
 
 
