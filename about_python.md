@@ -119,9 +119,46 @@ From the presence of the quotes we immediately understand that the content of th
 
 ![Cattura_2](https://user-images.githubusercontent.com/105428493/192258555-f11b6b80-2686-44e6-8515-0f651379a386.PNG)
 
+## Utility library
+
+### Pandas:
+Pandas is one of the most versatile libraries in the Python world. It is based on NumPy and, in turn, offers the foundation for
+many others work environments.
+
+Its operation hinges on two main data structures. The first is the DataFrame, a sort of table, structured on columns where the data is distributed by rows.
+It is interesting to note that both the columns and the rows are indexed in order to facilitate access to them individually or in groups. Working in Panda means manipulating data with
+DataFrame and related functionalities. The other data structure is the series that is used to represent rows or columns of a DataFrame.
+
+At this point our aim is to become familiar with the DataFrame and learn how to manipulate the data within them.
+
+For more information [click here](https://www.html.it/pag/402840/pandas-series-dataframe/).
+
+### Numpy:
+
+NumPy is one of the most popular, used and appreciated Python modules, to the point of being practically inevitable in any project that has to do with data science, data analysis or machine learning. In this practical guide we will learn to know all its facets, acquiring the necessary knowledge to use it in a professional environment.
+
+For more information [click here](https://www.html.it/guide/numpy-guida/).
+
+### Matplotlib:
+
+Matplotlib is one of the most important libraries in the Data Science scenario not only for its wide use but also because
+offers itself as a graphing engine for many other tools.
+
+For more information [click here](https://www.html.it/pag/404701/matplotlib/).
+
+### Tensorflow:
+
+Created by the Google Brain team and initially released to the public in 2015, TensorFlow is an open source library for large-scale numerical computing and machine learning. TensorFlow brings together a number of machine learning and deep learning (aka neural networks) models and algorithms and makes them useful through common programmatic metaphors. It uses Python or JavaScript to provide a convenient front-end API for building applications, while running those applications in high-performance C ++.
 
 
+TensorFlow, which competes with frameworks such as PyTorch and Apache MXNet, can train and execute deep neural networks for handwritten digit classification, image recognition, word embedding, recurrent neural networks, sequence-to-sequence models for machine translation, natural language processing and PDE-based simulations (partial differential equation). Most importantly, TensorFlow supports large-scale production forecasting, with the same models used for training.
 
+
+TensorFlow also has an extensive library of pre-trained models that can be used in your own projects. You can also use the code from TensorFlow Model Garden
+
+as examples of best practices for training your models.
+
+For more information [click here](https://www.tensorflow.org/guide).
 
 
 # Cos'è Python ?
@@ -240,4 +277,47 @@ __Contenitore
 (digitare invio)__
 
 Dalla presenza degli apici comprendiamo subito che il contenuto della variabile “contenitore”, ossia l’output della funzione “input” , è di tipo stringa. Il valore assunto dalla stringa di output è proprio ciò che noi avevamo digitato da tastiera e dato in pasto alla funzione “input”.
+
+## Librerie utili
+
+### Pandas:
+Pandas è una delle librerie più versatili del mondo Python. Si basa su NumPy e, a sua volta, offre il fondamento per
+molti altri ambienti di lavoro.
+
+Il suo funzionamento è imperniato su due strutture dati principali. La prima è il DataFrame, una sorta di tabella, strutturata su colonne dove i dati sono distribuiti per righe.
+Interessante notare che sia le colonne sia le righe sono indicizzate al fine di facilitare l'accesso ad esse singolarmente o a gruppi. Lavorare in Pandas significa essenzialmente manipolare dati con
+DataFrame e funzionalità ad essi collegate. L'altra struttura dati è la Series che viene utilizzata per rappresentare righe o colonne di un DataFrame.
+
+A questo punto il nostro scopo è iniziare a prendere confidenza con i DataFrame ed imparare a manipolare i dati al loro interno.
+
+Per maggiori informazioni [cliccare qui](https://www.html.it/pag/402840/pandas-series-dataframe/).
+
+### Numpy:
+
+NumPy è uno dei moduli Python più diffusi, usati e apprezzati, al punto da essere praticamente immancabile in ogni progetto che abbia a che fare con data science, analisi dei dati o machine learning. In questa guida pratica impareremo a conoscerne tutte le sfaccettature, acquisendo le conoscenze necessarie per utilizzarlo in ambito professionale.
+
+Per maggiori informazioni [cliccare qui](https://www.html.it/guide/numpy-guida/).
+
+### Matplotlib:
+
+Matplotlib è una delle librerie più importanti nello scenario della Data Science non solo per il suo largo utilizzo ma anche perchè
+si offre come motore di visualizzazione di grafici per molti altri strumenti. 
+
+
+Per maggiori informazioni [cliccare qui](https://www.html.it/pag/404701/matplotlib/).
+
+### Tensorflow:
+
+Creata dal team di Google Brain e inizialmente rilasciata al pubblico nel 2015, TensorFlow è una libreria open source per il calcolo numerico e l'apprendimento automatico su larga scala. TensorFlow raggruppa una serie di modelli e algoritmi di machine learning e deep learning ( alias reti neurali ) e li rende utili tramite metafore programmatiche comuni. Utilizza Python o JavaScript per fornire una comoda API front-end per la creazione di applicazioni, mentre esegue tali applicazioni in C++ ad alte prestazioni.
+
+
+TensorFlow, che compete con framework come PyTorch e Apache MXNet, può addestrare ed eseguire reti neurali profonde per la classificazione delle cifre scritte a mano, il riconoscimento di immagini, l'incorporamento di parole, le reti neurali ricorrenti, i modelli da sequenza a sequenza per la traduzione automatica, l'elaborazione del linguaggio naturale e Simulazioni basate su PDE (equazione differenziale parziale). Soprattutto, TensorFlow supporta la previsione della produzione su larga scala, con gli stessi modelli utilizzati per la formazione.
+
+
+TensorFlow ha anche un'ampia libreria di modelli pre-addestrati che possono essere utilizzati nei propri progetti. Puoi anche utilizzare il codice di TensorFlow Model Garden  
+
+come esempi di best practice per addestrare i tuoi modelli.
+
+Per maggiori informazioni [cliccare qui](https://www.tensorflow.org/guide).
+
 
