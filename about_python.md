@@ -77,6 +77,8 @@ __container
 
 Therefore there is no difference between the variable and the data we associate with it. It is a powerful tool that allows us to carry a certain data with us while writing a script, without having to remember each time what value it has, but simply calling it by name.
 
+![Cattura](https://user-images.githubusercontent.com/105428493/192258533-d57cc96f-ee96-46e1-8436-a3c490cadebb.PNG)
+
 ## Functions
 
 we introduce the concept of function. The functions in programming, conceptually, behave in a completely analogous way to the mathematical functions.
@@ -115,7 +117,7 @@ __Container
 
 From the presence of the quotes we immediately understand that the content of the "container" variable, that is the output of the "input" function, is of the string type. The value assumed by the output string is exactly what we had typed from the keyboard and fed to the "input" function.
 
-
+![Cattura_2](https://user-images.githubusercontent.com/105428493/192258555-f11b6b80-2686-44e6-8515-0f651379a386.PNG)
 
 
 
