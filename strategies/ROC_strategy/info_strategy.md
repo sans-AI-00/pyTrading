@@ -63,6 +63,12 @@ Per prima cosa bisogna scaricare l’applicazione dal sito web ufficiale “Pro 
 
 Attraverso la voce “aggiungi” vista in figura  inseriamo i tre indicatori di Momentum : i Price Rate of Change
 
+![image](https://user-images.githubusercontent.com/105428493/192235614-fd293b80-bcd9-4e9e-9f8d-20a48ddc1d3d.png)
+
+Dalla teoria di Charles Dow dei trend,  sappiamo ormai che più diminuiamo l’orizzonte temporale di osservazione più il margine di errore sull’individuazione del trend dominante aumenterà. Risulterebbe, quindi controproducente perdere tempo nel  testare il nostro programma di trading su intervalli di tempo minori di quello giornaliero. In questo caso utilizzeremo come time frame i due giorni come visto in figura.
+
+
+
 
 
 
