@@ -38,19 +38,19 @@ We are inside Pycharm, a development software, also called IDE, which offers use
 Python allows us to manage different types of data, in this lesson we will use two very common types, namely strings and integers. A string type data is defined by the use of quotes as follows:
 
 __'string'
-(type enter) __
+(type enter)__
 
 or similarly through the use of double quotes
 
 __"string"
-(type enter) __
+(type enter)__
 
 the content represented by this type of data is nothing more than a sequence of characters of variable length, ie a text. And it is typically characterized by the green color.
 
 While an integer numeric data will be trivially represented by a sequence of digits. The characteristic color in this case is blue (azure).
 
 __123
-(type enter) __
+(type enter)__
 
 In both cases, typing the data in the command line and pressing enter we obtain, in the line immediately following, the representation of the data itself.
 
@@ -62,23 +62,58 @@ The variable itself is represented by the name that we decide to associate with 
 Therefore the correct syntax to associate a data, that is a value, to the variable is the following
 
 __container = 123
-(type enter) __
+(type enter)__
 
 To the left of the "=" sign we have written the name of our variable. we can choose any name of our imagination for the variable, in this case we have decided to call it "container". While to the right of the equal we have written the value that will be inserted inside the variable. The symbol "=" is the fulcrum of this command and is used to make the compiler understand, once the command has been read, that our intention is precisely to associate the numerical data consisting of the digits to the variable named "container" 123.
 
 We can choose any name for our variable, as long as it doesn't contain spaces.
 
-It is interesting to note that, unlike other languages ​​such as "C", it was not necessary to define the type of variable before assigning its value. In fact, the Python compiler is able to automatically detect the type of data that we have decided to insert into it.
+It is interesting to note that, unlike other languages such as "C", it was not necessary to define the type of variable before assigning its value. In fact, the Python compiler is able to automatically detect the type of data that we have decided to insert into it.
 
 Once we type our variable and send the command, it is treated by the compiler just like the data it hosts inside it.
 
 __container
-(type enter) __
+(type enter)__
 
 Therefore there is no difference between the variable and the data we associate with it. It is a powerful tool that allows us to carry a certain data with us while writing a script, without having to remember each time what value it has, but simply calling it by name.
 
 ## Functions
 
+we introduce the concept of function. The functions in programming, conceptually, behave in a completely analogous way to the mathematical functions.
+A function requires the insertion of a certain number of input variables, the latter are then manipulated within the function in order to produce a result, called output.
+
+In general we are dealing with three types of functions:
+Functions that output data of a certain type, a value that we can subsequently associate with a variable created by us;
+Functions whose purpose is to perform internal operations on the computer, such as saving or deleting files;
+We can also encounter functions whose purpose is to interact with the user through the screen input output, for example by printing graphics and texts, or by requesting the entry of values from the keyboard.
+
+With the exception of the first type of function, the other two do not necessarily assume a certain output value once executed, in which case the value assumed by the function will be the so-called “None” type value, ie literally nothing.
+
+Let's see in practice what it is.
+
+The first function that we observe is called "input", the syntax of the language generally requires that to execute a function you must first write its name, followed by round brackets. It is inside the round brackets that we are going to enter the input values ​​required by the function we are using.
+
+__input()__
+
+The input function requires that a string type value be supplied as input data, so let's insert a representative text, for example the following sentence "write me something:".
+
+__input ("write me something:")__
+
+and finally we associate the result of the function to the variable named "container"
+
+__container = input ("write me something:")
+(type enter)__
+
+at this point we send the command. What happens is that this function prints on the screen the phrase we entered in input, waiting for the user to write something to send. So let's literally write "something" and type the "enter" key as always to send the content of what we have written.
+
+What happened at this point? Well it happened that the "input" function returned exactly what we wrote to it, then we subsequently inserted this output value into the "container" variable.
+
+At this point we can observe the content of the "container" variable by typing its name and sending the command.
+
+__Container
+(type enter)__
+
+From the presence of the quotes we immediately understand that the content of the "container" variable, that is the output of the "input" function, is of the string type. The value assumed by the output string is exactly what we had typed from the keyboard and fed to the "input" function.
 
 
 
@@ -168,4 +203,39 @@ Dunque non vi è alcuna differenza tra la variabile e il dato che associamo ad e
 
 ## Funzioni
 
+introduciamo il concetto di funzione. Le funzioni in programmazione, concettualmente,  si comportano in maniera del tutto analoga alle funzioni matematiche.
+Una funzione richiede l’inserimento di un certo numero di variabili in input, queste ultime vengono poi manipolate all’interno della funzione al fine di produrre un risultato, detto output.
+
+In generale ci troviamo ad avere a che fare con tre tipologie di funzioni: 
+Funzioni che restituiscono in output un dato di un certo tipo, un valore che successivamente potremo associare ad una variabile da noi creata;
+Funzioni il cui scopo è quello di eseguire operazioni interne al computer, come ad esempio salvare o eliminare file;
+Inoltre possiamo incontrare funzioni il cui scopo è quello di interagire con l’utente mediante l’input output dello schermo, ad esempio stampando grafici e testi, oppure richiedendo l’inserimento di valori da tastiera.
+
+Ad eccezione della prima tipologia di funzione, le altre due non necessariamente assumono un certo valore di output un volta eseguite, in tal caso il valore assunto dalla funzione sarà il cosiddetto valore di tipo “None” ossia letteralmente niente.
+
+Andiamo a vedere nel pratico di che si tratta. 
+
+La prima funzione che osserviamo è chiamata “input”, la sintassi del linguaggio generalmente impone che per eseguire una funzione si scriva prima di tutto il suo nome,  seguito poi da parentesi tonde. È proprio all’interno delle parentesi tonde che andremo ad inserire i valori di input richiesti dalla funzione che stiamo utilizzando. 
+
+__input()__
+
+La funzione input richiede che venga fornita come dato di input un valore di tipo stringa, andiamo dunque ad inserire una scritta rappresentativa, ad esempio la seguente frase “scrivimi qualcosa:”.
+
+__input(“scrivimi qualcosa: ”)__
+
+ed infine associamo il risultato della funzione alla variabile di nome “contenitore”
+
+__contenitore = input(“scrivimi qualcosa: ”)
+(digitare invio)__
+
+a questo punto inviamo il comando.  Ciò che accade è che tale funzione stampa a video proprio la frase da noi inserita in input, restando in attesa che l’utente scriva qualcosa da inviare. Dunque scriviamogli letteralmente “qualcosa” e digitiamo come sempre il tasto “invio” per inviare appunto il contenuto di ciò che abbiamo scritto.
+
+Cos’è accaduto a questo punto ? Bene è accaduto che la funzione “input” ha restituito in output proprio ciò che noi gli abbiamo scritto, poi successivamente abbiamo inserito questo valore di output all’interno della variabile “contenitore”.
+
+A questo punto possiamo osservare il contenuto della variabile “contenitore” digitandone il nome ed inviando il comando. 
+
+__Contenitore
+(digitare invio)__
+
+Dalla presenza degli apici comprendiamo subito che il contenuto della variabile “contenitore”, ossia l’output della funzione “input” , è di tipo stringa. Il valore assunto dalla stringa di output è proprio ciò che noi avevamo digitato da tastiera e dato in pasto alla funzione “input”.
 
