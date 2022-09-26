@@ -116,6 +116,24 @@ EXITSHORT consente di chiudere a mercato una posizione di vendita
 
 Ciò differenzia questo approccio rispetto ai più comuni. Infatti, queste funzioni non esistono in altri linguaggi di programmazione, pertanto probuilder risulta essere uno dei linguaggi preferiti dai trader.
 
+![image](https://user-images.githubusercontent.com/105428493/192370871-21351b81-3a6d-4aee-8d62-f923f6b59662.png)
+
+ProBuilder inoltre mette a disposizione tutti gli indicatori principali dell’analisi tecnica. Essi, possono essere utilizzati senza doverli andare a generare in maniera autonoma.
+La sintassi degli indicatori è costituita da tre elementi fondamentali quali il nome della funzione, il periodo considerato ed il valore della barra. Essi vengono riportati su un apposito Expert Advisor in questa modalità:
+Nome della Funzione [periodo] (valore della barra)
+
+Una volta selezionato il nostro Expert Advisor, cioè il foglio di programmazione del trading program attraverso  "Inserisci Funzione" si ricerca un indicatore, e quindi una funzione ProBuilder. Essa avrà dei valori preimpostati
+per il periodo e per il valore della barra. Se consideriamo la funzione media mobile avremo:
+***Average[20](Close)***
+I valori tra le parentesi possono essere cambiati.  Nel nostro caso Average[20](Close) significa media mobile è settata a 20 periodi e sul valore della chiusura della barra precedente . Come descritto è possibile cambiare il periodo(es: Average[50], Average[100], Average[200]. E’ altresi possibile
+sostituire "Close" con "Open”.
+
+ Questi strumenti di trading su ProBuilder consentono di costruire trading system personalizzati attraverso la programmazione. 
+
+
+La schermata di generazione  di un  trading system é formata principalmente da due finestre:
+1) La finestra di generazione per programmazione 
+2) La finestra di Backtesting di un sistema di di trading. 
 
 
 
