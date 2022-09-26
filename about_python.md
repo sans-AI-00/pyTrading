@@ -93,7 +93,7 @@ With the exception of the first type of function, the other two do not necessari
 
 Let's see in practice what it is.
 
-The first function that we observe is called "input", the syntax of the language generally requires that to execute a function you must first write its name, followed by round brackets. It is inside the round brackets that we are going to enter the input values ​​required by the function we are using.
+The first function that we observe is called "input", the syntax of the language generally requires that to execute a function you must first write its name, followed by round brackets. It is inside the round brackets that we are going to enter the input values required by the function we are using.
 
 __input()__
 
