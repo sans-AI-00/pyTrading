@@ -11,7 +11,7 @@ PATH = "path \\\ to \\\ MT5 \\\ terminal64.exe".
    2) PASSWORD
    3) SERVER
 5) Install the "Python compiler" if not present in the operating system (preferably Python 3.8.x-3.9.x). Download page: https://www.python.org/downloads/.
-To check the presence and any version of the python compiler on your pc, follow the instructions on the following page: https://www.wikihow.it/Controlla-la-Versione-di-Python-in-Windows-o-su-Mac
+To check the presence and any version of the python compiler on your pc, follow the instructions on the following page: https://www.wikihow.it/Controllare-la-Versione-di-Python-in-Windows-o-su-Mac
 6) Install "Anaconda". Download page: https://www.anaconda.com/products/distribution/download-success-pythonanywhere
 7) Install the "ta-lib" python library. Procedure by platform: https://blog.quantinsti.com/install-ta-lib-python/
 8) Install the "MetaTrader5" python library (run "pip install MetaTrader5" in the anaconda terminal)
